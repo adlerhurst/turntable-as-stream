@@ -1,7 +1,7 @@
 # turntable-as-stream
 List of commands I executed on my raspberry pi to stream my turntable locally
 
-All files which get touched with nano are safed in this repo.
+All files which get touched with nano can be found in this repo.
 
 ## Default configuration of raspberry
 
