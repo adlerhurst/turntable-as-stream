@@ -78,11 +78,3 @@ If the sound of the turntable got a bit louder I heard a lot of background noise
 1. amixer controls 
 1. search auto gain controll (looks like this: numid=<AUTO_GAIN_CONTROLL_NUMID>,iface=MIXER,name='Auto Gain Control')
 1. amixer cset numid=<AUTO_GAIN_CONTROLL_NUMID> 0
-
-## Source of inspiration
-
-Most important articels i've read. Thanks to all those authors. :)
-
-* https://www.instructables.com/id/Add-Aux-to-Sonos-Using-Raspberry-Pi/ Idea of how to realise this project
-* https://gist.github.com/vees/b52fcf0cccde403472a4058761aa3b50 how to install current darkice for mp3
-* https://raspberrypi.stackexchange.com/questions/19705/usb-card-as-my-default-audio-device how to remove hiss
