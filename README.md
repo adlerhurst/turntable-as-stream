@@ -23,6 +23,6 @@ You can find the manual in [this file](manual.md)
 
 Most important articels i've read. Thanks to all those authors. :)
 
-* https://www.instructables.com/id/Add-Aux-to-Sonos-Using-Raspberry-Pi/ Idea of how to realise this project
-* https://gist.github.com/vees/b52fcf0cccde403472a4058761aa3b50 how to install current darkice for mp3
-* https://raspberrypi.stackexchange.com/questions/19705/usb-card-as-my-default-audio-device how to remove hiss
+* [Idea of how to realise this project](https://www.instructables.com/id/Add-Aux-to-Sonos-Using-Raspberry-Pi/)
+* [How to install current darkice for mp3](https://gist.github.com/vees/b52fcf0cccde403472a4058761aa3b50)
+* [How to remove hiss](https://raspberrypi.stackexchange.com/questions/19705/usb-card-as-my-default-audio-device)
