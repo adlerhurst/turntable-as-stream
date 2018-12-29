@@ -20,8 +20,7 @@ password raspberry
       1. set wifi credentials
    1. Interfacing Options
       1. SSH > enable
-
-sudo reboot now
+1. sudo reboot now
 
 You can now connect via ssh. 
 
@@ -30,7 +29,7 @@ Login with username pi and and the password you have set in step 2
 1. ping google.ch # should not fail now
 1. sudo apt-get update
 
-## Set fix ip of raspberry
+## Set fix ip of raspberry on fritzbox
 
 1. Go to Wireless > Radio Internet
 1. choose your raspberrypi (default name is raspberrypi) and edit
@@ -41,6 +40,7 @@ Login with username pi and and the password you have set in step 2
 ## check soundcard
 
 1. arecord -l # should show usb soundcard
+1. sudo nano /etc/asound.conf
 
 ## install streaming software
 
@@ -59,17 +59,6 @@ cd darkice-*
 1. nano darkice.sh
 1. sudo chmod +x darkice.sh # makes file executable
 1. sudo service icecast2 start
-1. sudo nano /etc/asound.conf
-pcm.!default {
-    type hw
-    card 1 # C-Media USB Audio Device
-}
-
-ctl.!default {
-    type hw           
-    card 1 # C-Media USB Audio Device
-}
-
 1. amixer controls
 1. search auto gain controll
 1. amixer cset numid=<AUTO_GAIN_CONTROLL_NUMID> 0
