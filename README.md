@@ -73,7 +73,6 @@ cd darkice-*
 1. amixer controls
 1. search auto gain controll
 1. amixer cset numid=<AUTO_GAIN_CONTROLL_NUMID> 0
-1. settings in alsamixer
 
 ## (Not needed) install lame by your own
 
