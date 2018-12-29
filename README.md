@@ -14,3 +14,7 @@ As I am new to turntables I have no idea if I spent too much money on single com
 * USB Sound card (e.g. Delock USB Sound Adapter 7.1 )
 * Raspberry Pi (I use raspbian stretch lite as operating system)
 * Radio streaming app where you can add custom urls (e.g. TuneIn)
+
+## Manual 
+
+You can find the manual in [this file](manual.md)
