@@ -43,7 +43,6 @@ Login with username pi and and the password you have set in step 2
 
 1. arecord -l # should show usb soundcard card-`<CARD_NUMBER_OF_USB_CARD>` remeber `<CARD_NUMBER_OF_USB_CARD>` for asound file
 1. sudo nano /etc/asound.conf # example in repo
-1. insert asound.conf of this repo and replace `<CARD_NUMBER_OF_USB_CARD>`
 
 ## install streaming software
 
@@ -64,7 +63,7 @@ cd darkice-*
 1. nano darkice.cfg # example in repo
 1. nano darkice.sh # example in repo
 1. sudo chmod +x darkice.sh # makes file executable
-1. sudo service icecast2 start
+1. sudo service icecast2 start # as icecast is a service it starts automatically on reboot
 1. crontab -e
 1. @reboot sleep 10 && sudo $HOME/darkice.sh
 
