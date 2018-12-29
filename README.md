@@ -1,6 +1,8 @@
 # turntable-as-stream
 List of commands I executed on my raspberry pi to stream my turntable locally
 
+All files which get touched with nano are safed in this repo.
+
 ## Default configuration of raspberry
 
 first login: 
@@ -39,8 +41,9 @@ Login with username pi and and the password you have set in step 2
 
 ## check soundcard
 
-1. arecord -l # should show usb soundcard
-1. sudo nano /etc/asound.conf
+1. arecord -l # should show usb soundcard card-`<CARD_NUMBER_OF_USB_CARD>` remeber `<CARD_NUMBER_OF_USB_CARD>` for asound file
+1. sudo nano /etc/asound.conf # example in repo
+1. insert asound.conf of this repo and replace `<CARD_NUMBER_OF_USB_CARD>`
 
 ## install streaming software
 
@@ -54,17 +57,25 @@ cd darkice-*
 1. make
 1. sudo make install
 1. sudo apt-get install icecast2
-1. cd /home/pi/
-1. vi darkice.cfg
-1. nano darkice.sh
+
+## configuration
+
+1. cd $HOME
+1. nano darkice.cfg # example in repo
+1. nano darkice.sh # example in repo
 1. sudo chmod +x darkice.sh # makes file executable
 1. sudo service icecast2 start
+1. crontab -e
+1. @reboot sleep 10 && sudo $HOME/darkice.sh
+
+## remove hiss on stream
+
 1. amixer controls
 1. search auto gain controll
 1. amixer cset numid=<AUTO_GAIN_CONTROLL_NUMID> 0
 1. settings in alsamixer
 
-# install lame by your own
+## (Not needed) install lame by your own
 
 1. wget https://sourceforge.net/projects/lame/files/lame/3.100/lame-3.100.tar.gz # check for newer versions first!
 1. tar xfz lame-3.100.tar.gz
