@@ -43,7 +43,7 @@ password: the one you have set in step 2
 ## Check soundcard
 
 1. arecord -l # should show usb soundcard card-`<CARD_NUMBER_OF_USB_CARD>` remeber `<CARD_NUMBER_OF_USB_CARD>` for asound file
-1. sudo nano /etc/asound.conf # example in repo
+1. sudo nano /etc/asound.conf # [example](asound.conf)
 
 ## Install streaming software
 
@@ -61,8 +61,8 @@ cd darkice-*
 ## Configuration
 
 1. cd $HOME
-1. nano darkice.cfg # example in repo
-1. nano darkice.sh # example in repo
+1. nano darkice.cfg # [example](darkice.cfg)
+1. nano darkice.sh # [example](darkice.sh)
 1. sudo chmod +x darkice.sh # makes file executable
 1. sudo service icecast2 start # as icecast is a service it starts automatically on reboot
 1. crontab -e
