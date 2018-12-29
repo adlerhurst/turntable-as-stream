@@ -67,10 +67,13 @@ cd darkice-*
 1. crontab -e
 1. @reboot sleep 10 && sudo $HOME/darkice.sh
 
+You should now be able to call the following website and you should see a mountpoint to a mp3 file (default called raspi.mp3):
+http://<FIX_IP_OF_RASPBERRY>:8000
+
 ## remove hiss on stream
 
-1. amixer controls
-1. search auto gain controll
+1. amixer controls 
+1. search auto gain controll (looks like this: numid=<AUTO_GAIN_CONTROLL_NUMID>,iface=MIXER,name='Auto Gain Control')
 1. amixer cset numid=<AUTO_GAIN_CONTROLL_NUMID> 0
 
 ## (Not needed) install lame by your own
@@ -81,3 +84,11 @@ cd darkice-*
 1. sudo ./configure --with-fileio=lame --without-vorbis --disable-gtktest --enable-expopt=full --prefix=/usr
 1. sudo make
 1. sudo make install
+
+## source of inspiration
+
+Most important articels i've read. Thanks to all those authors. :)
+
+* https://www.instructables.com/id/Add-Aux-to-Sonos-Using-Raspberry-Pi/ Idea of how to realise this project
+* https://gist.github.com/vees/b52fcf0cccde403472a4058761aa3b50 how to install current darkice for mp3
+* https://raspberrypi.stackexchange.com/questions/19705/usb-card-as-my-default-audio-device how to remove hiss
