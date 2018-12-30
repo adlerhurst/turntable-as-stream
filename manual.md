@@ -52,7 +52,7 @@ password: the one you have set in step 2
 1. sudo apt-get update
 1. sudo apt-get install libmp3lame-dev
 1. apt-get source darkice
-cd darkice-*
+1. cd darkice-*
 1. ./configure  --prefix=/usr --sysconfdir=/usr/share/doc/darkice/examples --with-lame --with-lame-prefix=/usr/lib/arm-linux-gnueabihf --with-alsa --with-alsa-prefix=/usr/lib/arm-linux-gnueabihf
 1. make
 1. sudo make install
